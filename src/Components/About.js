@@ -1,6 +1,7 @@
+import './About.css'
 const About = () => {
     return (
-        <div>
+        <div className="about">
             <p>About</p>
             <div>
             <p>A Brief Project Description</p>

@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
-    return(
+    return (
         <div className="navbar">
-        <nav>
-        <p>Youtube</p>
-        {"  "}
-        <Link to="/">Home</Link>
-        {"  "}
-        <Link to="/about">About</Link>
-        {"  "}
-        </nav>
+            <nav>
+                <p>Youtube</p>
+                {"  "}
+                <Link to="/">Home</Link>
+                {"  "}
+                <Link to="/about">About</Link>
+                {"  "}
+            </nav>
         </div>
     );
 };
