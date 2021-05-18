@@ -11,6 +11,8 @@ const NavBar = () => {
                 {"  "}
                 <Link to="/">Home</Link>
                 {"  "}
+                <Link to="/videos">Videos</Link>
+                {"  "}
                 <Link to="/about">About</Link>
                 {"  "}
             </nav>

@@ -1,12 +1,12 @@
 import React from 'react';
-import './Video.css'
+import './Videos.css'
 
 class Videos extends React.Component {
     constructor() {
         super();
         this.state = {
-            name: "John Doe",
-            Comment: "I am a comment"
+            userName: "John Doe",
+            comment: "I am a comment"
         }
     }
     handleSubmit = (e) => {
@@ -14,7 +14,7 @@ class Videos extends React.Component {
 
     }
     handleName = (e) => {
-        this.setState({ name: e.target.value })
+        this.setState({ userName: e.target.value })
     }
     handleComment = (e) => {
         this.setState({ comment: e.target.value })
@@ -27,11 +27,11 @@ class Videos extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         <p>Name:</p>
-                        <input type="text" value="state" onChange={this.handleName} />
+                        <input type="text" value={userName} onChange={this.handleName} />
                     </label>
                     <label>
                         <p>Comment:</p>
-                        <input type="text" value="state" onChange={this.handleComment} />
+                        <input type="text" value={comment} onChange={this.handleComment} />
                     </label>
                     <button>Submit</button>
                 </form>
