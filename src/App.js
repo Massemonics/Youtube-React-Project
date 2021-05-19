@@ -1,9 +1,9 @@
-
 import './App.css';
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 import Home from './Components/Home'
-import { Switch, Route } from "react-router";
+import Videos from './Components/Videos'
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home}></Route>
+          <Route path="/videos" component={Videos}></Route>
           <Route path="/about" component={About}></Route>
           <Route>
             {()=><h1>404: Page Not Found</h1>}
