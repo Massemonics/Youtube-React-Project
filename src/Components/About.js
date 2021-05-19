@@ -12,14 +12,14 @@ const About = () => {
             <div>
             <p>A Brief Project Description</p>
             <p>A Short Bio of Du Min Chen </p>
-            <a href="https://github.com/Dumin1120">Visit Daneil's GitHub </a>
+            <a href="https://github.com/Dumin1120">Visit Dumins's GitHub </a>
             </div>
 
 
             <div>
             <p>A Brief Project Description</p>
             <p>A Short Bio of Quisa Hines </p>
-            <a href="https://github.com/Dequisa">Visit Daneil's GitHub </a>
+            <a href="https://github.com/Dequisa">Visit Quisa's GitHub </a>
             </div>
         </div>
     )

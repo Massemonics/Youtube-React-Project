@@ -14,9 +14,10 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route path="/videos" component={Videos}></Route>
           <Route path="/about" component={About}></Route>
+          <Route>
+            {()=><h1>404: Page Not Found</h1>}
+          </Route> 
         </Switch>
-
-
       </main>
     </div>
   )

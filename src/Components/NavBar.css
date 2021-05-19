@@ -1,5 +1,26 @@
+/* This is similar to YouTube's font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* This makes the links all black, no underline */
+a {
+    text-decoration: none;
+    color: black;
+}
+
 nav {
+    font-size: 2rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     background:red;
+ }
+
+ /* This prevents the user's cursor to be able to copy the text Youtube on NavBar*/
+ .navbar p{
+     user-select: none;
  }
