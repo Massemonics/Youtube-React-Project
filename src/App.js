@@ -1,10 +1,9 @@
-
 import './App.css';
 import NavBar from './Components/NavBar'
 import About from './Components/About'
 import Home from './Components/Home'
 import Videos from './Components/Videos'
-import { Switch, Route } from "react-router";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (

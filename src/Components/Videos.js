@@ -21,6 +21,7 @@ class Videos extends React.Component {
     }
 
     render() {
+        const { userName, comment } = this.state
         return (
             <div className="videos">
                 <p>A list of comments</p>
