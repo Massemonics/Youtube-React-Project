@@ -31,11 +31,11 @@ export default class Home extends Component {
                 </Link>
             </li>)
         )
-        const displayInfo = !videosList.length ? <h2>No video found</h2> : <ul>{videosList}</ul>
+        const displayInfo = !videosList.length ? <h2>No video found</h2> : <ul className='videos-list'>{videosList}</ul>
 
         return (
-            <div>
-                <form onSubmit={this.submitUserSearch}>
+            <div className='centered-div'>
+                <form onSubmit={this.submitUserSearch} className='search-box'>
                     <input
                         type="text"
                         placeholder="Search for videos"

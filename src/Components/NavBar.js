@@ -9,7 +9,6 @@ const NavBar = () => {
         <nav>
             <p>Youtube</p>  
             <Link to="/">Home</Link>
-            <Link to="/videos">Videos</Link>
             <Link to="/about">About</Link>
         </nav>
         </div>
