@@ -23,10 +23,10 @@ export default class Home extends Component {
         const { userSearch, searchResult, isSearch } = this.state;
         const videosList = searchResult.map(list => (
             <li key={list.id.videoId}>
-                <Link to={`/video/${list.id.videoId}`}>
+                <Link to={`/videos/${list.id.videoId}`}>
                     <img src={list.snippet.thumbnails.medium.url} alt="" />
                 </Link>
-                <Link to={`/video/${list.id.videoId}`}>
+                <Link to={`/videos/${list.id.videoId}`}>
                     {list.snippet.title}
                 </Link>
             </li>)
