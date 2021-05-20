@@ -1,0 +1,28 @@
+.single-video {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    margin: 15px;
+}
+.video-img {
+    position: relative;
+}
+.stat-duration, .stat-duration-live {
+    position: absolute;
+    bottom: 6px;
+    right: 5px;
+    padding: 2px 5px 2px 5px;
+}
+.stat-duration {
+    background-color: black;
+}
+.stat-duration-live {
+    background-color: red;
+    border-radius: 6px;
+}
+.video-title {
+    font-size: 1.3em;
+}
+.stat {
+    color:rgb(230, 230, 230);
+}
