@@ -12,7 +12,9 @@
     bottom: 6px;
     right: 5px;
     padding: 2px 5px 2px 5px;
+    color:white;
 }
+
 .stat-duration {
     background-color: black;
 }

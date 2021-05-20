@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
-import moment from "moment";
+import moment from 'moment';
+import 'moment-duration-format'
 import "./Home.css"
 
 export default class Home extends Component {
@@ -25,7 +26,6 @@ export default class Home extends Component {
         const videosIds = searchResult.map(video => video.id.videoId).join(",");
         const { data: { items: videosStats } } = await axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${videosIds}&part=snippet,contentDetails,statistics&key=${process.env.REACT_APP_API_KEY}`);
         this.setState({ userSearch: "", searchResult, videosStats, isSearch: true });
-        console.log(videosStats)
     }
 
     render() {
@@ -37,16 +37,16 @@ export default class Home extends Component {
                     <div className="video-img">
                         <Link to={`/videos/${list.id}`}>
                             <img src={list.snippet.thumbnails.medium.url} alt="" />
-                        </Link>
                         <span className={duration === "LIVE" ? "stat-duration-live" : "stat-duration"}>{duration}</span>
+                        </Link>
                     </div>
-                    <div>
+                    <div className='video-card'>
                         <Link to={`/videos/${list.id}`}>
                             <span className="video-title">{list.snippet.title}</span>
                         </Link>
                         <p className="stat">Channel: {list.snippet.channelTitle}</p>
                         <p className="stat">Posted: {list.snippet.publishedAt}</p>
-                        <p className="stat">Views: {list.statistics.viewCount} Like: {list.statistics.likeCount} Dislike: {list.statistics.dislikeCount}</p>
+                        <p className="stat">Views: {parseInt(list.statistics.viewCount).toLocaleString()} <img src="https://api.iconify.design/bx:bxs-like.svg" /> {list.statistics.likeCount} <img src="https://api.iconify.design/bx:bxs-dislike.svg" /> {list.statistics.dislikeCount}</p>
                     </div>
                 </li>
             )

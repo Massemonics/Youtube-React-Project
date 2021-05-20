@@ -45,6 +45,21 @@ body{
 .videos-list a{ 
   color: rgb(86, 115, 230);
 }
+.single-video span{
+user-select: none;
+
+}
+
+.video-card img{
+  filter: invert();
+  width: 22px;
+  height: 22px;
+  transform: translateY(5px);
+}
+
+.video-card img:hover{
+  filter: invert(50%);
+}
 
 .about{
   display: flex;
