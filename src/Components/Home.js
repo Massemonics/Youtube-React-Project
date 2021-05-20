@@ -12,7 +12,6 @@ export default class Home extends Component {
     }
 
     formatDuration = (time) => {
-        return "0";
         const duration = moment.duration(time).format('h:mm:ss').padStart(4, '0:0');
         return duration === "0:00" ? "LIVE" : duration;
     }
@@ -44,9 +43,8 @@ export default class Home extends Component {
                         <Link to={`/videos/${list.id}`}>
                             <span className="video-title">{list.snippet.title}</span>
                         </Link>
-                        <p className="stat">Channel: {list.snippet.channelTitle}</p>
-                        <p className="stat">Posted: {list.snippet.publishedAt}</p>
-                        <p className="stat">Views: {parseInt(list.statistics.viewCount).toLocaleString()} <img src="https://api.iconify.design/bx:bxs-like.svg" /> {list.statistics.likeCount} <img src="https://api.iconify.design/bx:bxs-dislike.svg" /> {list.statistics.dislikeCount}</p>
+                        <p className="stat">Views: {parseInt(list.statistics.viewCount).toLocaleString()}</p>
+                        <p><img src="https://api.iconify.design/bx:bxs-like.svg" alt="" /> {list.statistics.likeCount || 0} <img src="https://api.iconify.design/bx:bxs-dislike.svg" alt="" /> {list.statistics.dislikeCount || 0}</p>
                     </div>
                 </li>
             )
