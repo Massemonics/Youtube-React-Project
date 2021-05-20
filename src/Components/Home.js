@@ -11,6 +11,7 @@ export default class Home extends Component {
     }
 
     formatDuration = (time) => {
+        return "0";
         const duration = moment.duration(time).format('h:mm:ss').padStart(4, '0:0');
         return duration === "0:00" ? "LIVE" : duration;
     }
