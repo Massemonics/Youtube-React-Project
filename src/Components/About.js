@@ -20,11 +20,22 @@ const About = () => {
 
             </div>
 
-            <div>
-            <p>A Short Bio of Du Min Chen </p>
-            <a href="https://github.com/Dumin1120">Visit Dumins's GitHub </a>
+            <br/>
+            <div className="daniel-card">
+                <p>- A Short Bio of <strong>Du Min Chen</strong></p>
+                <div>
+                    <ul>
+                        <li>I immigrated to U.S. when I was 14.</li>
+                        <li>I am a full stack software developer passionate about computer hardwares and technology.</li>
+                        <li>I seek to create programs and apps that transform human lives for better through efficiency.</li>
+                        <li></li>
+                    </ul>
+                    <p>
+                        <a href="https://github.com/Dumin1120"><img src="https://api.iconify.design/eva:github-fill.svg" alt="octocat" /></a>
+                        Visit Dumins's<a href="https://github.com/Dumin1120">GitHub</a>
+                    </p>
+                </div>
             </div>
-
 
             <div>
             <p>A Short Bio of Quisa Hines </p>
