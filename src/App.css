@@ -72,6 +72,21 @@ user-select: none;
   color: rgb(86, 115, 230);
 }
 
+.daniel-card *{
+  margin:4px;
+  padding: 4px;
+ }
+.daniel-card ul{
+  list-style: none;
+  color:rgb(118, 157, 205);
+ }
+ .daniel-card img{
+  filter: invert();
+  width: 24px;
+  height: 24px;
+  transform: translateY(12px);
+  }
+
 
 
 
