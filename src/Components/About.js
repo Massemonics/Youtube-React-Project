@@ -37,10 +37,26 @@ const About = () => {
                 </div>
             </div>
 
-            <div>
-            <p>A Short Bio of Quisa Hines </p>
-            <a href="https://github.com/Dequisa">Visit Quisa's GitHub </a>
+
+            <br/>
+
+
+            <div className="daniel-card">
+                <p>- A Short Bio of <strong>Quisa Hines</strong></p>
+                <div>
+                    <ul>
+                        <li>Born and Raised in the USA</li>
+                        <li>I started my career in IT as an App Support Specialist for a proprietary software. Im now a Full Stack Web Developer, looking to leave my digital imprint.</li>
+                        <li>I enjoy City Biking and Trap Cardio!!</li>
+                    </ul>
+                    <p>
+                        <a href="https://github.com/Dequisa"><img src="https://api.iconify.design/eva:github-fill.svg" alt="octocat" /></a>
+                        Visit Quisa's<a href="https://github.com/Dequisa">GitHub</a>
+                    </p>
+                </div>
+
             </div>
+
         </div>
     )
 };
