@@ -41,7 +41,7 @@ const About = () => {
             <br/>
 
 
-            <div className="daniel-card">
+            <div className="about-card">
                 <p>- A Short Bio of <strong>Quisa Hines</strong></p>
                 <div>
                     <ul>
