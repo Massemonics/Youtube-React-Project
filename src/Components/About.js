@@ -2,8 +2,8 @@ import './About.css'
 const About = () => {
     return (
         <div className="about">
-             <p>A YouTube mock-up that uses the YouTube API, to renders videos and allows the user post comments</p>
-            <div className="daniel-card">
+             <p id = 'project-desc'>A YouTube mock-up that uses the YouTube API, to renders videos and allows the user post comments</p>
+            <div className="about-card">
                 <p>- A Short Bio of <strong>Daniel Naranjo</strong></p>
                 <div>
                     <ul>
@@ -21,7 +21,7 @@ const About = () => {
             </div>
 
             <br/>
-            <div className="daniel-card">
+            <div className="about-card">
                 <p>- A Short Bio of <strong>Du Min Chen</strong></p>
                 <div>
                     <ul>

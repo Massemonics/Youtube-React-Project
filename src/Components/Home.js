@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import moment from "moment";
 import "moment-duration-format";
-import "./Home.css";
+import { v4 as uuid } from 'uuid'
 
 export default class Home extends Component {
     constructor() {
@@ -56,7 +56,7 @@ export default class Home extends Component {
         const videosList = videosDetails.map(list => {
             const duration = this.formatDuration(list.contentDetails.duration);
             return (
-                <li key={list.id} className="single-video">
+                <li key={uuid()} className="single-video">
                     <div className="video-img">
                         <Link to={`/videos/${list.id}`}>
                             <img src={list.snippet.thumbnails.medium.url} alt="" />
