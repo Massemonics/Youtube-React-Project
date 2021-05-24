@@ -10,8 +10,8 @@ class Videos extends React.Component {
             userName: "",
             comment: "",
             commentList: [],
-            youtubeW: '640',
-            youtubeH: '390'
+            youtubeWidth: (window.innerWidth >= 390) ? '640' : '320',
+            youtubeHeight: (window.innerWidth >= 390) ? '390' : '195',
         }
     }
     handleSubmit = (e) => {
@@ -36,21 +36,13 @@ class Videos extends React.Component {
         this.setState({ comment: e.target.value })
     }
     
-    componentDidUpdate (){
-
-        this.setState({
-            youtubeH : (window.innerHeight > 380) ? '390' : '195',
-            youtubeW: (window.innerWidth > 380) ? '640' : '320'
-        })
-    }
 
     render() {
-        const { userName, comment, youtubeH, youtubeW } = this.state
+        const { userName, comment, youtubeHeight, youtubeWidth } = this.state
         const {id} = this.props
-        console.log( window.innerHeight)
         const opts = {
-            height: youtubeH,
-            width: youtubeW,
+            height: youtubeHeight,
+            width: youtubeWidth,
             playerVars: {
               autoplay: 1,
             },
